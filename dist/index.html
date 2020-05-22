@@ -1,1 +1,128 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="css/style.min.css">    <title>Test</title></head><body>    <div class="loader-wrapper">        <div class="loader">        </div>        <div class="loader-section section-left"></div>        <div class="loader-section section-right"></div>    </div>       <header class="header">        <div class="container">            <div class="header__content">                <div class="header__logo">                    <a href="#" target="_blank" class="header__logo-link"><picture><source srcset="img/icons/icons.svg#logo" type="image/webp"><img src="img/icons/icons.svg#logo" class="svg-logo-dims" alt="logo"></picture></a>                </div>                <nav class="header__nav">                    <ul class="header__ul">                        <li class="header__ul-list">                            <a href="#" class="header__ul-link  header__ul-link-active">Home</a>                            <ul class="drop__ul">                                <li class="drop__ul-title">Submenu 01</li>                                <li><a class="dropdown__link" href="#">Excepteur sint</a></li>                                <li><a class="dropdown__link" href="#">Occaecat cupidatat</a>                                  <ul class="dropdown__ul">                                    <li class="drop__ul-title">Submenu 02</li>                                    <li><a class="dropdown__ul-link" href="#">Adipisci velit</a></li>                                    <li><a class="dropdown__ul-link" href="#">Magnam aliquam</a></li>                                    <li><a class="dropdown__ul-link" href="#">Error sit voluptatem</a></li>                                    </ul>                                </li>                              </ul>                        </li>                        <li class="header__ul-list">                            <a href="#" class="header__ul-link">About us</a>                        </li>                        <li class="header__ul-list">                            <a href="#news" class="header__ul-link">Our News</a>                        </li>                        <li class="header__ul-list">                            <a href="#" class="header__ul-link">Blog</a>                        </li>                        <li class="header__ul-list">                            <a href="#" class="header__ul-link">Contacts</a>                        </li>                        <li class="header__ul-list">                            <a href="#" class="header__ul-link">Faq</a>                        </li>                    </ul>                    <div class="header__login">                        <a href="#" class="header__sign modal-open">Sign in</a>                        <button type="button" class="header__registration modal-open">Registration</button>                                            <div class="header__modal">                            <div class="header__modal-bg"></div>                            <div class="header__modal-row">                                <p class="header__modal-title">Excepteur sint<br> cupidat non prident? </p>                                <form class="header__modal-form">                                <div>                                    <input type="text" placeholder="Name">                             </div>                             <div>                                     <input type="email" placeholder="Email">                              </div>                              <div class="header__modal-checkbox">                                <input type="checkbox">                                                        <label>Lorem ipsum dolor sit amet</label>                            </div>                              <button type="submit" class="header__modal-button">Отправить</button>                             </form>                            </div>                                                      </div>                                            </div>                </nav>                <div class="header__lang">                    <div class="header__lang-img"><picture><source srcset="img/icons/icons.svg#language" type="image/webp"><img src="img/icons/icons.svg#language" class="svg-language-dims" alt="language"></picture></div>                    <select name="speed" id="header__lang-select" class="header__lang-select">                        <option  selected="selected">English</option>                        <option>Russian</option>                    </select>                </div>                <div class="header__burger">                </div>            </div>        </div>    </header>       <div id="news" class="news">    <div class="news__row">        <div class="news__row-box">        <p class="news__title">Check out our personal<br> blog to be in trend</p>        <a href="#" class="news__link">Go to Blog            <picture><source srcset="img/icons/icons.svg#arrow-right" type="image/webp"><img src="img/icons/icons.svg#arrow-right" class="svg-arrow-right-dims news__link-img" alt="arrow-right"></picture>        </a>    </div>    </div>    <div class="news__row">        <div class="news__row-box">        <p class="news__title">Check out our personal<br> blog to be in trend</p>        <a href="#" class="news__link">Check News            <picture><source srcset="img/icons/icons.svg#arrow-right" type="image/webp"><img src="img/icons/icons.svg#arrow-right" class="svg-arrow-right-dims news__link-img" alt="arrow-right"></picture>        </a>    </div>    </div></div>      <div class="modal__background"></div>    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    <script src="js/script.min.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Test</title>
+</head>
+<body>
+       <header class="header">
+        <div class="container">
+        <div class="header__content">
+            <a href="#" target="_blank" class="header__logo"></a>
+            <form action="#" class="header__form">
+                <div class="header__form-row"><input type="text" placeholder="لماكلا كمسا" class="header__form-input"></div>
+                <p class="header__form-input-text">كب صاخلا فتاهلا مقرو</p>
+                <div class="header__form-row">  
+                    <input class="header__form-input header__form-input-left" type="tel" placeholder="___-___-___">
+                    <input id="phone" name="phone" class="header__form-input" type="tel">
+            </div>
+            <div class="header__form-checkbox">
+                <label>* .اًمﺎﻋ 18 يﺮﻤﻋ ﻦﻣ ﺮﺜﻛأ ﺪﻴﻛﺄﺘﻟاو ﺔﻴﺻﻮﺼﺨﻟا ﺔﺳﺎﻴﺳو</label>
+                <input type="checkbox" checked>      
+            </div>
+                <button type="submit" class="header__form-button">ناهر عض</button>
+            </form>
+            <div class="header__stick"></div>
+            <div class="header__circle"></div>
+            <div class="header__triangles-left"></div>
+            <div class="header__triangles-right"></div>
+            <div class="header__blur"></div>
+        </div>  
+        </div>
+       
+    </header>
+       <div class="icons">
+    <div class="container">
+        <div class="icons__content">
+            <div class="icons__content-row">
+        <div class="icons__item">
+            <p class="icons__item-title">VIP عضو</p>
+            <div class="icons__item-img"><img src="img/union.svg" alt="Union"></div>
+            <p class="icons__item-text">
+                ةضايرلا ىلع ناهرلا<br>
+                ٪ 100 نم رثكأ</p>
+        </div>
+        <div class="icons__item">
+            <p class="icons__item-title">مكب ابحرم</p>
+            <div class="icons__item-img"><img src="img/champion-cup.svg" alt="Union"></div>
+            <p class="icons__item-text">
+                الوأ ٪ 100<br>
+                ةأفاكم عاديإ</p>
+        </div>
+    </div>
+    <div class="icons__content-row">
+        <div class="icons__item">
+            <p class="icons__item-title">تافورصملا</p>
+            <div class="icons__item-img"><img src="img/money-bag.svg" alt="Union"></div>
+            <p class="icons__item-text">
+                دعبي<br>
+                نوزئافلا</p>
+        </div>
+        <div class="icons__item">
+            <p class="icons__item-title">ةحيرص ةأفاكم</p>
+            <div class="icons__item-img"><img src="img/sale.svg" alt="Union"></div>
+            <p class="icons__item-text">
+                ةحيرص ةأفاكم<br>
+                ٪05 ىتح</p>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+       <div class="bonus">
+    <div class="container">
+        <p class="bonus__title">ACTIVATE <span class="bonus__title-color">BONUS 100%</span></p>
+        <div class="bonus__img"><img src="img/100usd.png" alt="100 USD"></div>
+        <a href="#" class="bonus__button">التسجيل</a>
+        <div class="bonus__triangle-left"></div>
+        <div class="bonus__triangles-left"></div>
+        <div class="bonus__triangles-right-top"></div>
+        <div class="bonus__triangles-right-bottom"></div>
+    </div>
+
+</div>
+       <footer class="footer">
+        <div class="container">
+        <div class="footer__content">
+         <div class="footer__row">
+           <div class="footer__icons">
+               <div class="footer__icons-img"><img src="img/poker-footer.svg" alt=""></div>
+               <div class="footer__icons-img"><img src="img/casino-footer.svg" alt=""></div>
+           </div>
+           <div class="footer__icons">
+               <div class="footer__icons-img-border"><img src="img/visa.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/neteller.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/apple-pay.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/master-card.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/paypal.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/government-gibraltar.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/gambling-commision.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/online-banking.svg" alt="" class="footer__icons-img"></div>
+               <div class="footer__icons-img-border"><img src="img/and-more.svg" alt="" class="footer__icons-img"></div>
+           </div>
+           <div class="footer__icons">
+            <div class="footer__icons-img-border"><img src="img/18+.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/much-better.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/interac-online.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/trustly.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/gambleaware.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/problem-gambling-support.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/gamstop.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/paysafecard.svg" alt="" class="footer__icons-img"></div>
+            <div class="footer__icons-img-border"><img src="img/and-more.svg" alt="" class="footer__icons-img"></div>
+        </div>
+         </div>
+         <p class="footer__text">888 Holdings Plc, 601-701 Europort, GIBRALTAR. Telephone: +350-20049800. Email: Info@888holdingsplc.com Online Casino & Online Poker<br>
+            888 is the best online Casino and Poker site in the world. Discover first-class online casino gambling at 888.com with more bonus giveaways, promotions, and events than at any other casino online! From the free casino download to the amazing casino games, the entertainment never ends at 888casino. Experience the rush of Las Vegas online gambling from the comfort of your own home on ultra-realistic, industry-acclaimed 3D software. Choose from over 35 amazing game options ! Challenge your skills with online BlackJack or Online Roulette in the largest casino online and enjoy great bonuses and best odds! Play Craps, Baccarat and at 888 Bingo or head over to the incredible array of Slot Machines; Play casino fruit machine games in 888.com’s online casino, spin the reels in one of the many great games our casino offers! 888.com not only features classic online slots but progressives and Video Slots, as well! This is the time to start playing and to enjoy the game at 888 casino.</p>
+        </div>  
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

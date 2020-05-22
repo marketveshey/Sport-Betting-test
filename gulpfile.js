@@ -12,15 +12,15 @@ let path = {
     src: {
         html: [source_folder + "/*.html", "!" + source_folder+"/_*.html"],
         css: source_folder+"/scss/style.scss",
-        js: source_folder+"/js/script.js",
-        img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico,webp}",   
-        fonts: source_folder+"/fonts/*.woff",
+        js: source_folder+"/js/*.js",
+        img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico}",   
+        fonts: source_folder+"/fonts/*.ttf",
     },
     watch: {
         html: source_folder+"/**/*.html",
         css: source_folder+"/scss/**/*.scss",
         js: source_folder+"/js/**/*.js",
-        img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico,webp}"
+        img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico}"
     },
     clean: "./" + project_folder + "/"
 }
@@ -37,12 +37,8 @@ let {src, dest} = require ('gulp'),
     rename = require("gulp-rename"),
     uglify = require("gulp-uglify-es").default,
     imagemin = require("gulp-imagemin"),
-    webp = require("gulp-webp"),
-    webphtml = require('gulp-webp-html'),
-    webpcss = require('gulp-webpcss'),
     ttf2woff = require('gulp-ttf2woff'),
-    ttf2woff2 = require('gulp-ttf2woff2'),
-    svgSprite = require('gulp-svg-sprite');
+    ttf2woff2 = require('gulp-ttf2woff2');
 
 
 
@@ -58,7 +54,6 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
     .pipe(fileinclude())
-    .pipe(webphtml())
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream())
 }
@@ -76,7 +71,6 @@ function css() {
     .pipe(
         autoprefixer()
     )
-    .pipe(webpcss())
     .pipe(dest(path.build.css))
     .pipe(clean_css())
     .pipe(
@@ -107,11 +101,6 @@ function js() {
 
 function images() {
     return src(path.src.img)
-    .pipe(
-        webp({
-            quality: 70
-        })
-    )
     .pipe(dest(path.build.img))
     .pipe(src(path.src.img))
     .pipe(
@@ -125,20 +114,6 @@ function images() {
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream())
 }
-
-gulp.task('svgSprite', function(){
-    return gulp.src([source_folder + '/img/*.svg'])
-    .pipe(svgSprite({
-        mode: {
-            stack: {
-                sprite: "../icons/icons.svg",
-                example: true
-            }
-        },
-    }
-    ))
-    .pipe(dest(path.build.img))
-})
 
 function fonts(params) {
     src(path.src.fonts)
